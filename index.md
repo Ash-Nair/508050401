@@ -37,6 +37,7 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
 
+
 <script type="text/javascript">
           (function(){
             var useriq=window._uiq=window._uiq||[];useriq.invoked&&window.console&&console.error&&console.error("Useriq snippet already exists."),useriq.invoked=!0,useriq.methods=["setSiteId","startTracker","setDoNotTrack","identify","track","group"],useriq.factory=function(e){return function(){var r=Array.prototype.slice.call(arguments);return r.unshift(e),useriq.push(r),useriq}};for(var i=0;i<useriq.methods.length;i++){var key=useriq.methods[i];useriq[key]=useriq.factory(key)} 
@@ -46,9 +47,12 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
             // user id is required
             var user_id = "ashwin"
             // account id is required for account analytics
+            var account_id = "INSERT_YOUR_APP_ACCOUNT_ID_HERE"
             useriq.setSiteId(useriq_site_id)
             useriq.identify(user_id, {
               user_name: 'ashwin',
+              account_id: account_id,
+              account_name: 'INSERT_ACCOUNT_NAME_HERE',
               user_email: 'ashwin.nair@useriq.com',
               signup_date: '2018-01-27',
             })
@@ -57,4 +61,5 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
             g.defer=true; g.async=true; g.src="https://feed.useriq.com/useriq.js"; s.parentNode.insertBefore(g,s);
           })();
 </script>
+      
       
